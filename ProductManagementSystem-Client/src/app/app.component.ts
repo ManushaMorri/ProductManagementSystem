@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
-
+import { Routes } from '@angular/router';
+import { SignupComponent } from './signup/signup.component';
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -8,3 +9,6 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'ProductManagementSystem-Client';
 }
+export const routes:Routes=[//{path:'create',component:CreateComponent}
+{path:'signup',component:SignupComponent}
+]
